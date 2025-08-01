@@ -1,0 +1,8 @@
+# Ignorar SCSS y archivos de mapa
+*.scss
+*.map
+
+# Opcional: ignorar backups o editores
+*.log
+*.bak
+.DS_Store
