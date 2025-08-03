@@ -156,4 +156,14 @@ footer {
   background-color: #1a237e;
   color: #ffffff;
   padding: 1rem;
+}
+
+/*Imágenes*/
+.img-rec-comun {
+  margin-top: 1rem;
+  width: 95%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }/*# sourceMappingURL=estilos.css.map */
