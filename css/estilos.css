@@ -87,9 +87,10 @@ body {
 }
 
 .logo-navbar {
-  height: 140px;
+  max-height: 40px;
+  height: auto;
   width: auto;
-  margin-right: 0.5rem;
+  display: block;
 }
 
 a {
