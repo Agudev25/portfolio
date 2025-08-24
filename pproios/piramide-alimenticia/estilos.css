@@ -1,0 +1,185 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Comic+Relief:wght@400;700&display=swap');
+body {
+
+  background: linear-gradient(135deg, #e0bbf4, #c084f5, #7c4fc0);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: aqua;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f3f3;
+}
+/*Título*/
+.titulo {
+    margin-top: 10px;
+    font-family:"Alegreya Sans SC", sans-serif; 
+    font-weight: 600;
+    font-size:3em;
+    font-style: normal;
+    color: rebeccapurple;
+}
+
+.nombre {
+    font-family:"Alegreya Sans SC", sans-serif; 
+    font-weight: 600;
+    font-size:3em;
+    color: rgb(255, 4, 29);
+}
+
+button{
+  margin: 15px;
+  padding: 5px;
+  font-size: 14px;
+  font-family:"Alegreya Sans SC", sans-serif;
+  border-radius: 10px;
+}
+button:hover{
+    background-color: rebeccapurple;
+    color: white;
+    border: red solid 2px;
+}
+
+.contenedor-piramide {
+  position: relative;
+  width: 100%;
+  margin-left: 6%;
+}
+
+.piramide {
+  width: 90%;
+  display: block;
+}
+.zona {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  /*border: 2px dashed rgba(255, 0, 0, 0.3); solo para pruebas */
+}
+
+#zona-1 {
+  bottom: 5%;
+  height: 12%;
+  left: 7%;
+  width: 77%;
+}
+
+#zona-2 {
+  bottom: 19%;
+  height: 13%;
+  left: 14%;
+  width:61%;
+}
+
+#zona-3 {
+  bottom: 33%;
+  height: 13%;
+  left: 21%;
+  width: 47%;
+}
+
+#zona-4 {
+  bottom: 47%;
+  height: 13%;
+  left: 28%;
+  width: 33%;
+}
+
+#zona-5 {
+  bottom: 61%;
+  height: 13%;
+  left: 34%;
+  width: 21%;
+}
+
+#zona-6 {
+  bottom: 75%;
+  height: 13%;
+  left: 40%;
+  width: 11%;
+}
+
+
+/* Alimento draggable */
+#alimento img {
+  width: 40%; 
+  height: auto;
+  display: block;
+  margin: auto;
+  border-radius: 10%;
+}
+
+.col-2 {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: space-between;
+}
+
+/* Pegatinas ordenadas en cuadrícula */
+.pegatinas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 40px); /* tantas columnas como quepan */
+  gap: 8px;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  height: auto; /* crece según cuántas pegatinas haya */
+  padding: 4px;
+}
+
+.pegatinas img {
+  width: 40px;
+  height: auto;
+  display: inline-block;
+  position: static;
+  border-radius: 50%;
+}
+.pegatinas1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 50px); /* tantas columnas como quepan */
+  gap: 8px;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  height: auto; /* crece según cuántas pegatinas haya */
+  padding: 4px;
+}
+
+.pegatinas1 img {
+  width: 50px;
+  height: auto;
+  display: inline-block;
+  position: static;
+  border-radius: 50%;
+}
+
+#contador-restantes {
+    margin-top: 2%;
+    font-weight: 100;
+}
+
+.col-2 {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+.nombreAlimento {
+    margin-top: 2%;
+    font-family:"Alegreya Sans SC", sans-serif; 
+    font-weight: 600;
+    font-size:3em;
+    color: rgb(238, 255, 5);
+}
+
+
+.logo {
+  width: 70%;
+  margin-top: 1em;
+}
