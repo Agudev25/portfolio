@@ -75,6 +75,7 @@ document.querySelectorAll(".zona").forEach((zona) => {
         const pegatina = document.getElementById(`pegatina-${alimento.id}`);
         if (pegatina) {
           pegatina.style.display = "inline-block";
+          pegatina.classList.add("colocado");
         }
         alimento.mostrado = true; // Solo marcar como mostrado si acierta
       }
@@ -146,3 +147,54 @@ function mostrarSiguienteAlimento() {
 // Inicialización
 generarPegatinas();
 actualizarContador();
+
+// ----- SOPORTE PARA TÁCTIL -----
+const alimentoDiv = document.getElementById("alimento");
+let alimentoMovil = null;
+
+document.addEventListener("touchstart", (event) => {
+  const img = event.target;
+  if (img.id === "alimento-actual") {
+    alimentoMovil = img;
+  }
+});
+
+document.addEventListener("touchmove", (event) => {
+  if (!alimentoMovil) return;
+
+  const touch = event.touches[0];
+  alimentoMovil.style.position = "absolute";
+  alimentoMovil.style.left = `${touch.pageX - 50}px`;
+  alimentoMovil.style.top = `${touch.pageY - 50}px`;
+  alimentoMovil.style.zIndex = 1000;
+});
+
+document.addEventListener("touchend", (event) => {
+  if (!alimentoMovil) return;
+
+  const touch = event.changedTouches[0];
+  const zonas = document.querySelectorAll(".zona");
+  let soltadoEnZona = false;
+
+  zonas.forEach((zona) => {
+    const rect = zona.getBoundingClientRect();
+    if (
+      touch.clientX >= rect.left &&
+      touch.clientX <= rect.right &&
+      touch.clientY >= rect.top &&
+      touch.clientY <= rect.bottom
+    ) {
+      // Simulamos el drop
+      zona.dispatchEvent(new Event("drop", { bubbles: true }));
+      soltadoEnZona = true;
+    }
+  });
+
+  // Reset estilo
+  alimentoMovil.style.position = "";
+  alimentoMovil.style.left = "";
+  alimentoMovil.style.top = "";
+  alimentoMovil.style.zIndex = "";
+
+  alimentoMovil = null;
+});
