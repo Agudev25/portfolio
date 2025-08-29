@@ -137,6 +137,20 @@ body {
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
 
+.hero-headerportfolio {
+  background-image: url("../img/imagenes/program/img-prog-19.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 60vh;
+  padding: 5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
 .logo-navbar {
   max-height: 40px;
   height: auto;
@@ -206,4 +220,27 @@ footer {
 .icono-red:hover {
   transform: scale(1.2);
   filter: brightness(1.3);
+}
+
+.modal-body li {
+  margin-bottom: 0.5rem;
+  opacity: 1 !important;
+  /* Forzar opacidad completa */
+  color: #212529 !important;
+  /* Color oscuro para mejor contraste */
+  font-weight: 500 !important;
+  /* Peso de fuente medio para mejor legibilidad */
+}
+
+.modal-body strong {
+  color: #0d6efd !important;
+  /* Color azul de Bootstrap para los strong */
+  font-weight: 600 !important;
+}
+
+.modal-body ul {
+  opacity: 1 !important;
+  color: #212529 !important;
+  /* Texto oscuro */
+  font-weight: 500 !important;
 }/*# sourceMappingURL=estilos.css.map */
