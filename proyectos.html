@@ -58,7 +58,7 @@
       </nav>
 
       <!-- HEADER -->
-      <header class="hero-header">
+      <header class="hero-header bg-h-proyecto">
         <div class="hero-overlay text-center text-white p-5 animate-hero">
           <h1>¡Bienvenid@!</h1>
           <br />
@@ -652,10 +652,83 @@
                 <div class="card-body">
                   <h5 class="card-title">Otros proyectos académicos</h5>
                   <p class="card-text">
-                    Trabajos y prácticas realizados durante las formaciones DAM
-                    y DAW, aplicando distintas tecnologías.
+                    Trabajos y prácticas realizados durante las formaciones DAM,
+                    DAW y cusos online que he estado siguiendo a lo largo de
+                    estos años de aprendizaje aplicando distintas tecnologías.
                   </p>
-                  <a href="#" class="btn btn-sm btn-outline-danger">Más info</a>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalOtros"
+                  >
+                    Más info
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="modalOtros"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modalPiramideLabel">
+                      Otros proyectos.
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Cerrar"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      A lo largo de estos años de preparación, he realizado
+                      pequeños proyectos que han servido de prácticas y para las
+                      tareas exigidas en las diferentes evaluaciones de ambos
+                      grados. Evidentemente no son proyectos como para mostrar
+                      Aquí pero sí que enumeraré todas las tecnologías con las
+                      que he practicado (al menos todas de las que me acuerde
+                      ahoa). Incluyo también las practicadas en los diferentes
+                      cursos on-line seguidos hasta ahora. En vista de las
+                      actualizaciones en tendencias de programación y vista la
+                      demanda en algunas aplicaciones de empleo, he optado por
+                      hacer cursos de react js y spring bott para estar más al
+                      día de la demanda. Pero también hicimos nuestros pinitos
+                      con el diseño gráfico en desarrollo de interfaces usando
+                      inkSkape y Gimp para el manejo y la adaptación de imágnes.
+                    </p>
+                    <ul>
+                      <li>
+                        <strong>Tecnologías:</strong> ORACLE SQL, POSTGRE SQL,
+                        MYSQL, JAVA, KOTLIN, PHP, JAVASCRIPT, LARAVEL, SCSS,
+                        REACTJS, SPRIN BOOT (Microservicios).
+                      </li>
+                      <li>
+                        <strong>Objetivo:</strong> Aprender lo máximo posible
+                        para ampliar el abanico de conocimientos
+                      </li>
+                      <li>
+                        <strong>Funcionalidades:</strong> Un buen puñado de
+                        pequeñas aplicaciones de muy variadas funcionalidades.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Cerrar
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

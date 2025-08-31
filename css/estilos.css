@@ -123,7 +123,6 @@ body {
 }
 
 .hero-header {
-  background-image: url("../img/imagenes/program/img-prog-19.avif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -137,18 +136,12 @@ body {
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
 
-.hero-headerportfolio {
-  background-image: url("../img/imagenes/program/img-prog-19.avif");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 60vh;
-  padding: 5rem 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+.bg-h-index {
+  background-image: url(../img/imagenes/program/img-prog-19.avif);
+}
+
+.bg-h-proyecto {
+  background-image: url(../img/imagenes/program/pro4.webp);
 }
 
 .logo-navbar {
