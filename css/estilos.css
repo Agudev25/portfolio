@@ -144,6 +144,10 @@ body {
   background-image: url(../img/imagenes/program/pro4.webp);
 }
 
+.bg-h-cartagena {
+  background-image: url(../img/imagenes/ciudad/collage2.webp);
+}
+
 .logo-navbar {
   max-height: 40px;
   height: auto;
