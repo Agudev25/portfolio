@@ -240,4 +240,12 @@ footer {
   color: #212529 !important;
   /* Texto oscuro */
   font-weight: 500 !important;
+}
+
+.carousel .carousel-caption h4,
+h5,
+h6,
+.carousel .carousel-caption p {
+  color: #fff;
+  text-shadow: 12px 12px 20px rgb(0, 0, 0);
 }/*# sourceMappingURL=estilos.css.map */
