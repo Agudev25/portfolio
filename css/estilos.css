@@ -242,10 +242,7 @@ footer {
   font-weight: 500 !important;
 }
 
-.carousel .carousel-caption h4,
-h5,
-h6,
-.carousel .carousel-caption p {
+.textoCarrusel {
   color: #fff;
-  text-shadow: 12px 12px 20px rgb(0, 0, 0);
+  text-shadow: 8px 8px 12px rgb(0, 0, 0);
 }/*# sourceMappingURL=estilos.css.map */
