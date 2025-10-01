@@ -65,7 +65,7 @@
           <h3>Este es mi portfolio personal.</h3>
           <br />
           <p class="lead">
-            Se muestran los proyectos más destacados de los últimos 5 años.
+            Aquí podrás ver mis proyectos destacados de los últimos 5 años.
           </p>
           <br />
         </div>
@@ -486,7 +486,98 @@
                 </div>
               </div>
             </div>
+            <!-- Poyecto react 1 -->
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Imágnes de la NASA</h5>
+                  <p class="card-text">
+                    Web desarrollada íntegramente con React JS que Muestra
+                    imágenes procedentes de la api pública de la NASA. Puedes
+                    seleccionar aleatorimente las correspondinetes a otras
+                    fechas. DESARROLLADA Y DESPLEGADA EN UN SÓLO DÍA!!
+                  </p>
+                  <div class="mt-auto d-flex justify-content-between">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalReactnASA"
+                    >
+                      Más info
+                    </button>
+                    <a
+                      href="https://nasa-app-henna.vercel.app/"
+                      target="_blank"
+                      class="btn btn-outline-success"
+                      >WEB NASA</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Modal react 1-->
+              <div
+                class="modal fade"
+                id="modalReactnASA"
+                tabindex="-1"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modalPiramideLabel">
+                        Imágenes de la NASA
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Cerrar"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Web desplegada en git-hub integrada en un host
+                        proporcionado por Vercel desarrollada íntegramente en
+                        visual studio code con React JS. Muestra imágenes
+                        publicadas por la NASA y permite la opción de elegir
+                        otras imágenes de fechas anteriores. Lo más interesante
+                        de esta demo es que ha sido desarrollada y desplegada en
+                        unas pocas horas Y sólo pretende ofrecer una idea del
+                        control sobre la tecnología de React JS aplicando
+                        Tailwind en su diseño.
+                      </p>
+                      <ul>
+                        <li>
+                          <strong>Tecnologías:</strong> React JS, Tailwind y
+                          Visual studio code. Git-hub y Vercel
+                        </li>
+                        <li>
+                          <strong>Objetivo:</strong> Demostración de
+                          conocimientos de tecnologías utilizadas
+                        </li>
+                        <li>
+                          <strong>Funcionalidades:</strong> Muestra la imagen
+                          del día de la nasa y sus datos además de poder elegir
+                          otras aleatoriamente.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <!-- Poyecto react 2 -->
             <div class="col-md-4">
               <div class="card h-100 shadow-sm">
                 <div class="card-body">
@@ -506,7 +597,7 @@
                   </button>
                 </div>
               </div>
-              <!-- Modal -->
+              <!-- Modal react 1-->
               <div
                 class="modal fade"
                 id="modalReact"
